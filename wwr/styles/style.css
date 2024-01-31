@@ -1,0 +1,33 @@
+body {
+    background-color: darkgreen;
+    font-size: 16 px;
+    color: white;
+}
+
+header {
+    background-color: grey;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+    color: magenta;
+}
+
+img.logo {
+    width: 100px;
+    height: auto;
+}
+
+img#hero-img {
+    width: 100%;
+    height: auto;
+}
+
+div.social img {
+    width: 100px;
+    height: auto;
+}
