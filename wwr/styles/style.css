@@ -77,7 +77,7 @@ h2 {
 }
 
 header {
-    background-color: (--primary-color-opacity);
+    background-color: var(--primary-color-opacity);
     display: grid;
     grid-template-columns: 150px auto;
 }
