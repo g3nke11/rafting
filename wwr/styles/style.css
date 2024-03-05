@@ -247,6 +247,13 @@ footer .social img {
     padding-top: 15px;
 }
 
+/*Rivers rules*/
+
+.rivers-grid {
+    display:grid
+}
+
+/* Phone version */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
