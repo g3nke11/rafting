@@ -4,6 +4,12 @@
     --primary-color-opacity: #4d564755;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 
 #content {
     max-width: 1600px;
@@ -248,10 +254,70 @@ footer .social img {
 }
 
 /*Rivers rules*/
-
-.rivers-grid {
-    display:grid
+.rivers-content {
+    text-align: center;
+    padding: 20px;
 }
+
+/*Reconsider color*/
+.rivers-content h1 {
+    font-size: 3em;
+    text-decoration: underline;
+    color: white;
+}
+
+.rivers-content h2 {
+    padding: 15px;
+}
+
+.salmon {
+    margin: 20px;
+    text-align: center;
+}
+
+.salmon-img {
+    width: 50%;
+    float: left;
+    margin: 5px;
+    border: 10px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.gray-canyon {
+    margin: 20px;
+    text-align: center;
+}
+
+.gray-img {
+    width: 50%;
+    float: right;
+    margin: 5px;
+    border: 10px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.grand-canyon {
+    margin: 20px;
+    text-align: center;
+}
+
+.grand-img {
+    width: 50%;
+    float: left;
+    margin: 5px;
+    border: 10px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.salmon-img:hover, .gray-img:hover, .grand-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+
 
 /* Phone version */
 @media screen and (max-width: 900px) {
@@ -292,6 +358,12 @@ footer .social img {
     }
     footer {
         margin-top: 25px;
+    }
+
+    /*Rivers rules for mobile*/
+    .rivers-content {
+        display: grid;
+        grid-template-columns: 1fr;
     }
     
 }
