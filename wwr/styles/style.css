@@ -257,6 +257,8 @@ footer .social img {
 .rivers-content {
     text-align: center;
     padding: 20px;
+    justify-content: center;
+    align-content: center;
 }
 
 /*Reconsider color*/
@@ -268,9 +270,16 @@ footer .social img {
 
 .rivers-content h2 {
     padding: 15px;
+    margin-bottom: 10px;
 }
 
-.salmon {
+/*Salmon river section*/
+.salmon-river {
+    padding: 10px;
+    margin: 10px;
+}
+
+#salmon {
     margin: 20px;
     text-align: center;
 }
@@ -284,9 +293,16 @@ footer .social img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/*Gray Canyon section*/
 .gray-canyon {
+    padding: 10px;
+    margin: 10px;
+    clear: both;
+}
+
+#canyon {
     margin: 20px;
-    text-align: center;
+    text-align: center;    
 }
 
 .gray-img {
@@ -298,7 +314,18 @@ footer .social img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/*Grand Canyon section*/
 .grand-canyon {
+    padding: 10px;
+    margin: 10px;
+    clear: both;
+}
+
+.grand-canyon h2 {
+    text-align: center;
+}
+
+#grand {
     margin: 20px;
     text-align: center;
 }
@@ -312,6 +339,7 @@ footer .social img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/*Additional rules*/
 .salmon-img:hover, .gray-img:hover, .grand-img:hover {
     opacity: .6;
     transform: scale(1.1);
@@ -364,6 +392,37 @@ footer .social img {
     .rivers-content {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .salmon-river {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #salmon {
+        grid-row: 2/3;
+    }
+
+    .gray-canyon {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #canyon {
+        grid-row: 2/3;
+    }  
+    
+    .grand-canyon {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #grand {
+        grid-row: 2/3;
+    }
+
+    .rivers-content img {
+        width: 100%;
     }
     
 }
