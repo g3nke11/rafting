@@ -13,7 +13,7 @@
     max-width: 1600px;
     margin: 0 auto;
 }
-
+ /* Header rules */
 header {
     background-color: #35605A;
     display: grid;
@@ -56,6 +56,7 @@ body {
     padding: 0;
 }
 
+/* Home page body rules*/
 .banner {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -141,6 +142,7 @@ body {
     border: 5px solid #00120B;
 }
 
+/* Footer rules */
 footer {
     background-color: #35605A;
     color: white;
@@ -170,4 +172,36 @@ footer a:hover {
 
 footer .social img {
     padding-top: 15px;
+}
+
+/* Fiction rules */
+
+/* Non-Fiction rules */
+
+/* Phone version */
+@media screen and (max-width: 900px) {
+    .banner, .hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    .hero {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    
 }
