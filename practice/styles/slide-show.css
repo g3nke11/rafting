@@ -3,9 +3,11 @@
 }
 
 .slideshow-container {
-    max-width: 1000px;
+    width: 500px;
     position: relative;
     margin: auto;
+    border: 10px solid black;
+    border-radius: 10px;
 }
 
 .mySlides {
